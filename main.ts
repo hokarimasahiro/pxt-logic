@@ -21,7 +21,7 @@ namespace logic {
         return r
     }
     /**
-     * TODO: 数値の指定位置簿ビットの01を返す
+     * TODO: 数値の指定位置のビットの01を返す
      * @param n 数値。, eg: 0x0010
      * @param b ビット位置。, eg: 2
      */
