@@ -33,6 +33,18 @@ namespace logic {
             return false
     }
     /**
+     * TODO: 数値の指定位置のビットの01を数値で返す
+     * @param n 数値。, eg: 0x0010
+     * @param b ビット位置。, eg: 2
+     */
+    //% block
+    export function bittestN(n: number, b: number): number {
+        if ((n & 1 << b) != 0)
+            return 1;
+        else
+            return 0;
+    }
+    /**
      * TODO: 論理積
      * @param a 数値。, eg: 0x3221
      * @param b 数値。, eg: 0xff33
