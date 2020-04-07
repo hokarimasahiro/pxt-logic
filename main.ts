@@ -3,6 +3,20 @@
  */
 //% weight=100 color=#0fbc11 icon=""
 namespace logic {
+    export enum func{
+        //% block xor
+        xor=0,
+        // block or
+        or=1,
+        //% block and
+        and=2,
+        //% block not
+        not = 2,
+        //% block shiftLeft
+        shiftLeft=4,
+        //% block shiftRight
+        shiftRight=5
+    }
     /**
      * TODO: 16進文字列をNUMBERに変換する
      * @param hex 16進文字列。, eg: 1f
@@ -95,6 +109,23 @@ namespace logic {
      */
     //% block
     export function rshift(a: number, b: number): number {
+        return a >>> b
+    }
+    /**
+     * TODO: 論理計算
+     * @param a 数値。, eg: 0x3221
+     * @param f 演算子。, eg: func.xor
+     * @param b 数値。, eg: 0xff33
+     */
+    //% block
+    export function lFunc(a: number,f:func, b: number): number {
+        switch(f){
+            case func.xor:return xor(a,b);break;
+            case func.or: return or(a, b); break;
+            case func.and: return and(a, b); break;
+            case func.shiftLeft: return lshift(a, b); break;
+            case func.shiftRight: return rshift(a, b); break;
+        }
         return a >>> b
     }
     /**
