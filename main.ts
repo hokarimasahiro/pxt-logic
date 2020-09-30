@@ -120,11 +120,11 @@ namespace logic {
     //% block
     export function lFunc(a: number,f: logicFunction, b: number): number {
         switch(f){
-            case func.xor:return xor(a,b);break;
-            case func.or: return or(a, b); break;
-            case func.and: return and(a, b); break;
-            case func.shiftLeft: return lshift(a, b); break;
-            case func.shiftRight: return rshift(a, b); break;
+            case logicFunction.xor:return xor(a,b);break;
+            case logicFunction.or: return or(a, b); break;
+            case logicFunction.and: return and(a, b); break;
+            case logicFunction.shiftLeft: return lshift(a, b); break;
+            case logicFunction.shiftRight: return rshift(a, b); break;
         }
         return a >>> b
     }
