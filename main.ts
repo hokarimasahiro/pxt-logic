@@ -4,17 +4,17 @@
 //% weight=100 color=#0fbc11 icon=""
 namespace logic {
     export enum logicFunction{
-        //% block xor
+        //% block "xor"
         xor=0,
-        // block or
+        // block "or"
         or=1,
-        //% block and
+        //% block "and"
         and=2,
-        //% block not
+        //% block "not"
         not = 3,
-        //% block shiftLeft
+        //% block "shiftLeft"
         shiftLeft=4,
-        //% block shiftRight
+        //% block "shiftRight"
         shiftRight=5
     }
     /**
