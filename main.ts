@@ -11,7 +11,7 @@ namespace logic {
         //% block and
         and=2,
         //% block not
-        not = 2,
+        not = 3,
         //% block shiftLeft
         shiftLeft=4,
         //% block shiftRight
