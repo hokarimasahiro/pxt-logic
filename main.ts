@@ -16,10 +16,10 @@ namespace logic {
         shiftRight=5
     }
     /**
-     * convert hex strings to number
-     * @param hex hex strings。, eg: 1f
+     * Convert hexadecimal string to number
+     * @param s hex strings, eg: 1f
      */
-    //% blockid="hex_Strings_To_Number" block="hexToNumver %s"
+    //% blockid="hex_strings_To_number" block="hexToNumver %s"
     export function hex2number(s: string): number {
         let r = 0
         for (let i = 0; i < s.length; i++) {
@@ -33,11 +33,11 @@ namespace logic {
         return r
     }
     /**
-     * 数値の指定位置のビットの01を論理で返す
-     * @param n 数値。, eg: 0x0010
-     * @param b ビット位置。, eg: 2
+     * Logical value of the bit at the specified position
+     * @param n number, eg: 0x0010
+     * @param b bit position, eg: 2
      */
-    //% block
+    //% block="%b in %a"
     export function bittest(n: number, b: number): boolean {
         if ((n & 1 << b) != 0)
             return true
@@ -75,47 +75,47 @@ namespace logic {
         return a | b
     }
     /**
-     * 排他的論理和
-     * @param a 数値。, eg: 0x3221
-     * @param b 数値。, eg: 0xff33
+     * exclusive or
+     * @param a number。, eg: 0x3221
+     * @param b number。, eg: 0xff33
      */
-    //% block
+    //% blockId="xor" block="%a xor %b"
     export function xor(a: number, b: number): number {
         return a ^ b
     }
     /**
-     * 否定
-     * @param a 数値。, eg: 0x3221
+     * invert
+     * @param a number。, eg: 0x3221
      */
-    //% block
-    export function not(a: number): number {
-        return ~a
+    //% blockID="invert" block="invert %a"
+    export function invert(a: number): number {
+        return ~a;
     }
     /**
-     * 左シフト
-     * @param a 数値。, eg: 0x3221
-     * @param b 数値。, eg: 0xff33
+     * shift left
+     * @param a number。, eg: 0x3221
+     * @param b number。, eg: 0xff33
      */
-    //% block
+    //% blockID="shift_left" block="%a << %b"
     export function lshift(a: number, b: number): number {
         return a << b
     }
     /**
-     * 右シフト
-     * @param a 数値。, eg: 0x3221
-     * @param b 数値。, eg: 0xff33
+     * shift right
+     * @param a number。, eg: 0x3221
+     * @param b number。, eg: 0xff33
      */
-    //% block
+    //% blockId="shift_right" block=%a >> %b"
     export function rshift(a: number, b: number): number {
         return a >>> b
     }
     /**
-     * 論理計算
-     * @param a 数値。, eg: 0x3221
-     * @param f 演算子。, eg: func.xor
-     * @param b 数値。, eg: 0xff33
+     * logic function
+     * @param a number。, eg: 0x3221
+     * @param f func。, eg: func.xor
+     * @param b number。, eg: 0xff33
      */
-    //% block="%a %f %b"
+    //% blockID="func" block="%a %f %b"
     export function func(a: number,f: lFunc, b: number): number {
         switch(f){
             case lFunc.xor:return xor(a,b);break;
