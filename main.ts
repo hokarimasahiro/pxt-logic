@@ -134,8 +134,8 @@ namespace logic {
     export function ShowNumber(n: number): void {
         for (let y = 0; y < 5; y++) {
             for (let x = 0; x < 4; x++) {
-                if ((n & 1 << (19 - (y * 4 + x))) != 0) led.plot(y + 1, x)
-                else led.unplot(y + 1, x)
+                if ((n & 1 << (19 - (y * 4 + x))) != 0) led.plot(y, x+1)
+                else led.unplot(y, x+1)
             }
         }
     }
