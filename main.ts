@@ -61,7 +61,7 @@ namespace logic {
      * @param a number, eg: 0x3221
      * @param b number, eg: 0xff33
      */
-    //% block="%a and %b"
+    //% bloclId="and" block="%a and %b"
     export function and(a: number, b: number): number {
         return a & b
     }
@@ -70,7 +70,7 @@ namespace logic {
      * @param a number, eg: 0x3221
      * @param b number, eg: 0xff33
      */
-    //% block="%a or %b"
+    //% blockId="or" block="%a or %b"
     export function or(a: number, b: number): number {
         return a | b
     }
@@ -94,7 +94,7 @@ namespace logic {
     /**
      * shift left
      * @param a number。, eg: 0x3221
-     * @param b number。, eg: 0xff33
+     * @param b number。, eg: 2
      */
     //% blockID="shift_left" block="%a << %b"
     export function lshift(a: number, b: number): number {
@@ -103,7 +103,7 @@ namespace logic {
     /**
      * shift right
      * @param a number。, eg: 0x3221
-     * @param b number。, eg: 0xff33
+     * @param b number。, eg: 2
      */
     //% blockId="shift_right" block="%a >> %b"
     export function rshift(a: number, b: number): number {
@@ -118,13 +118,13 @@ namespace logic {
     //% blockID="func" block="%a %f %b"
     export function func(a: number,f: lFunc, b: number): number {
         switch(f){
-            case lFunc.xor:return xor(a,b);break;
-            case lFunc.or: return or(a, b); break;
-            case lFunc.and: return and(a, b); break;
-            case lFunc.shiftLeft: return lshift(a, b); break;
-            case lFunc.shiftRight: return rshift(a, b); break;
+            case lFunc.xor:return xor(a,b);
+            case lFunc.or: return or(a, b);
+            case lFunc.and: return and(a, b);
+            case lFunc.shiftLeft: return lshift(a, b);
+            case lFunc.shiftRight: return rshift(a, b);
         }
-        return a >>> b
+        return 0;
     }
     /**
      * show number for hexDecimal format
