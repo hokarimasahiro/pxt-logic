@@ -1,4 +1,3 @@
 {
-    "logic.hexStringsToNumber": "16進文字列を数値に変換",
     "logic.hexStringsToNumber|block": "16進変換 %s"
 }
