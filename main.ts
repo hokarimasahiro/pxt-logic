@@ -10,8 +10,8 @@ namespace logic {
         or=1,
         //% block=and
         and=2,
-        //% block=not
-        not = 3,
+//        //% block=not
+//        not = 3,
         //% block="<<"
         shiftLeft=4,
         //% block=">>"
