@@ -4,21 +4,21 @@
 //% weight=100 color=#0fbc11 icon=""
 namespace logic {
     export enum logicFunction{
-        //% block "xor"
+        //% block=xor
         xor=0,
-        //% block or
+        //% block~or
         or=1,
-        //% block "and"
+        //% block=and
         and=2,
-        //% block "not"
+        //% block=not
         not = 3,
-        //% block "shiftLeft"
+        //% block=shiftLeft
         shiftLeft=4,
-        //% block "shiftRight"
+        //% block=shiftRight
         shiftRight=5
     }
     /**
-     * TODO: 16進文字列をNUMBERに変換する
+     * 16進文字列をNUMBERに変換する
      * @param hex 16進文字列。, eg: 1f
      */
     //% block
@@ -35,7 +35,7 @@ namespace logic {
         return r
     }
     /**
-     * TODO: 数値の指定位置のビットの01を返す
+     * 数値の指定位置のビットの01を論理で返す
      * @param n 数値。, eg: 0x0010
      * @param b ビット位置。, eg: 2
      */
@@ -47,7 +47,7 @@ namespace logic {
             return false
     }
     /**
-     * TODO: 数値の指定位置のビットの01を数値で返す
+     * 数値の指定位置のビットの01を数値で返す
      * @param n 数値。, eg: 0x0010
      * @param b ビット位置。, eg: 2
      */
@@ -59,7 +59,7 @@ namespace logic {
             return 0;
     }
     /**
-     * TODO: 論理積
+     * 論理積
      * @param a 数値。, eg: 0x3221
      * @param b 数値。, eg: 0xff33
      */
@@ -68,7 +68,7 @@ namespace logic {
         return a & b
     }
     /**
-     * TODO: 論理和
+     * 論理和
      * @param a 数値。, eg: 0x3221
      * @param b 数値。, eg: 0xff33
      */
@@ -77,7 +77,7 @@ namespace logic {
         return a | b
     }
     /**
-     * TODO: 排他的論理和
+     * 排他的論理和
      * @param a 数値。, eg: 0x3221
      * @param b 数値。, eg: 0xff33
      */
@@ -86,7 +86,7 @@ namespace logic {
         return a ^ b
     }
     /**
-     * TODO: 否定
+     * 否定
      * @param a 数値。, eg: 0x3221
      */
     //% block
@@ -94,7 +94,7 @@ namespace logic {
         return ~a
     }
     /**
-     * TODO: 左シフト
+     * 左シフト
      * @param a 数値。, eg: 0x3221
      * @param b 数値。, eg: 0xff33
      */
@@ -103,7 +103,7 @@ namespace logic {
         return a << b
     }
     /**
-     * TODO: 右シフト
+     * 右シフト
      * @param a 数値。, eg: 0x3221
      * @param b 数値。, eg: 0xff33
      */
@@ -112,7 +112,7 @@ namespace logic {
         return a >>> b
     }
     /**
-     * TODO: 論理計算
+     * 論理計算
      * @param a 数値。, eg: 0x3221
      * @param f 演算子。, eg: func.xor
      * @param b 数値。, eg: 0xff33
@@ -129,7 +129,7 @@ namespace logic {
         return a >>> b
     }
     /**
-     * TODO: 数値を16進形式で表示する
+     * 数値を16進形式で表示する
      * @param n 数値。, eg: 12345
      */
     //% block
