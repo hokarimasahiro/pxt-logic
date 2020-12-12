@@ -1,5 +1,5 @@
 /**
- * 論理
+ * logic
  */
 //% weight=100 color=#0fbc11 icon=""
 namespace logic {
@@ -10,8 +10,6 @@ namespace logic {
         or=1,
         //% block=and
         and=2,
-//        //% block=not
-//        not = 3,
         //% block="<<"
         shiftLeft=4,
         //% block=">>"
@@ -19,9 +17,9 @@ namespace logic {
     }
     /**
      * convert hex strings to number
-     * @param hex 16進文字列。, eg: 1f
+     * @param hex hex strings。, eg: 1f
      */
-    //% block="hexToNumver %s"
+    //% blockid="hex_Strings_To_Number" block="hexToNumver %s"
     export function hex2number(s: string): number {
         let r = 0
         for (let i = 0; i < s.length; i++) {
