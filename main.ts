@@ -37,7 +37,7 @@ namespace logic {
      * @param n number, eg: 0x0010
      * @param b bit position, eg: 2
      */
-    //% blockId="bittest" block="logical value of position %b in %a"
+    //% blockId="bittest" block="logical value of position %b in %n"
     export function bittest(n: number, b: number): boolean {
         if ((n & 1 << b) != 0)
             return true
@@ -49,7 +49,7 @@ namespace logic {
      * @param n number, eg: 0x0010
      * @param b bit position, eg: 2
      */
-    //% blockId="bittestN" block="value of position %b in %a"
+    //% blockId="bittestN" block="value of position %b in %n"
     export function bittestN(n: number, b: number): number {
         if ((n & 1 << b) != 0)
             return 1;
