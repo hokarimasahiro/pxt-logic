@@ -34,10 +34,10 @@ namespace logic {
     }
     /**
      * Logical value of the bit at the specified position
-     * @param b bit position, eg: 2
      * @param n number, eg: 0x0010
+     * @param b bit position, eg: 2
      */
-    //% blockId="bittest" block="logical value of position %b in %n"
+    //% blockId="bittest" block="%n at position %b"
     export function bittest(n: number, b: number): boolean {
         if ((n & 1 << b) != 0)
             return true
@@ -46,10 +46,10 @@ namespace logic {
     }
     /**
      * value of the bit at the specified position
-     * @param b bit position, eg: 2
      * @param n number, eg: 0x0010
+     * @param b bit position, eg: 2
      */
-    //% blockId="bittestN" block="value of position %b in %n"
+    //% blockId="bittestN" block="%n at position %b"
     export function bittestN(n: number, b: number): number {
         if ((n & 1 << b) != 0)
             return 1;
