@@ -37,7 +37,7 @@ namespace logic {
      * @param n number, eg: 0x0010
      * @param b bit position, eg: 2
      */
-    //% block="%b in %a"
+    //% blockId="bittest" block="logical value of position %b in %a"
     export function bittest(n: number, b: number): boolean {
         if ((n & 1 << b) != 0)
             return true
@@ -45,11 +45,11 @@ namespace logic {
             return false
     }
     /**
-     * 数値の指定位置のビットの01を数値で返す
+     * value of the bit at the specified position
      * @param n number, eg: 0x0010
      * @param b bit position, eg: 2
      */
-    //% block
+    //% blockId="bittestN" block="value of position %b in %a"
     export function bittestN(n: number, b: number): number {
         if ((n & 1 << b) != 0)
             return 1;
@@ -110,9 +110,9 @@ namespace logic {
         return a >>> b
     }
     /**
-     * logic function
+     * logical function
      * @param a number。, eg: 0x3221
-     * @param f func。, eg: func.xor
+     * @param f function。, eg: func.xor
      * @param b number。, eg: 0xff33
      */
     //% blockID="func" block="%a %f %b"
@@ -127,7 +127,7 @@ namespace logic {
         return 0;
     }
     /**
-     * show number for hexDecimal format
+     * show number for hexadecimal format
      * @param n number。, eg: 12345
      */
     //% blockId="show_number" block="show number %n"
