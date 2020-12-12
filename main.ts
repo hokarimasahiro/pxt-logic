@@ -3,7 +3,7 @@
  */
 //% weight=100 color=#0fbc11 icon=""
 namespace logic {
-    export enum logicFunction{
+    export enum lFunc{
         //% block=xor
         xor=0,
         //% block=or
@@ -116,13 +116,13 @@ namespace logic {
      * @param b 数値。, eg: 0xff33
      */
     //% block="%a %f %b"
-    export function lFunc(a: number,f: logicFunction, b: number): number {
+    export function func(a: number,f: lFunc, b: number): number {
         switch(f){
-            case logicFunction.xor:return xor(a,b);break;
-            case logicFunction.or: return or(a, b); break;
-            case logicFunction.and: return and(a, b); break;
-            case logicFunction.shiftLeft: return lshift(a, b); break;
-            case logicFunction.shiftRight: return rshift(a, b); break;
+            case lFunc.xor:return xor(a,b);break;
+            case lFunc.or: return or(a, b); break;
+            case lFunc.and: return and(a, b); break;
+            case lFunc.shiftLeft: return lshift(a, b); break;
+            case lFunc.shiftRight: return rshift(a, b); break;
         }
         return a >>> b
     }
