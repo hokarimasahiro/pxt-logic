@@ -6,7 +6,7 @@ namespace logic {
     export enum logicFunction{
         //% block=xor
         xor=0,
-        //% block~or
+        //% block=or
         or=1,
         //% block=and
         and=2,
