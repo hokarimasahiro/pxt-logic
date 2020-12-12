@@ -19,7 +19,7 @@ namespace logic {
      * Convert hexadecimal string to number
      * @param s hex strings, eg: 1f
      */
-    //% blockId="hex_strings_To_number" block="hexToNumver %s"
+    //% blockId="hexStringsToNumber" block="hexToNumver %s"
     export function hex2number(s: string): number {
         let r = 0
         for (let i = 0; i < s.length; i++) {
