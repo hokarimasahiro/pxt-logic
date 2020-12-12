@@ -18,10 +18,10 @@ namespace logic {
         shiftRight=5
     }
     /**
-     * 16進文字列をNUMBERに変換する
+     * convert hex strings to number
      * @param hex 16進文字列。, eg: 1f
      */
-    //% block
+    //% block="hexToNumver %s"
     export function hex2number(s: string): number {
         let r = 0
         for (let i = 0; i < s.length; i++) {
