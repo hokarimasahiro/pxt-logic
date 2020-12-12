@@ -12,9 +12,9 @@ namespace logic {
         and=2,
         //% block=not
         not = 3,
-        //% block=shiftLeft
+        //% block="<<"
         shiftLeft=4,
-        //% block=shiftRight
+        //% block=">>"
         shiftRight=5
     }
     /**
