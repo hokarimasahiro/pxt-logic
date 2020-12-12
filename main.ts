@@ -127,10 +127,10 @@ namespace logic {
         return a >>> b
     }
     /**
-     * 数値を16進形式で表示する
-     * @param n 数値。, eg: 12345
+     * show number for hexDecimal format
+     * @param n number。, eg: 12345
      */
-    //% block
+    //% blockId="show_number" block="show number %n"
     export function ShowNumber(n: number): void {
         for (let y = 0; y < 5; y++) {
             for (let x = 0; x < 4; x++) {
