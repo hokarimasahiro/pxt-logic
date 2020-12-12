@@ -112,7 +112,7 @@ namespace logic {
     /**
      * logical function
      * @param a number。, eg: 0x3221
-     * @param f function。, eg: func.xor
+     * @param f function。, eg: lFunc.xor
      * @param b number。, eg: 0xff33
      */
     //% blockID="func" block="%a %f %b"
