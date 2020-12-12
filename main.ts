@@ -76,8 +76,8 @@ namespace logic {
     }
     /**
      * exclusive or
-     * @param a number。, eg: 0x3221
-     * @param b number。, eg: 0xff33
+     * @param a number, eg: 0x3221
+     * @param b number, eg: 0xff33
      */
     //% blockId="xor" block="%a xor %b"
     export function xor(a: number, b: number): number {
@@ -85,7 +85,7 @@ namespace logic {
     }
     /**
      * invert
-     * @param a number。, eg: 0x3221
+     * @param a number, eg: 0x3221
      */
     //% blockID="invert" block="invert %a"
     export function invert(a: number): number {
@@ -93,8 +93,8 @@ namespace logic {
     }
     /**
      * shift left
-     * @param a number。, eg: 0x3221
-     * @param b number。, eg: 2
+     * @param a number, eg: 0x3221
+     * @param b number, eg: 2
      */
     //% blockID="shift_left" block="%a << %b"
     export function lshift(a: number, b: number): number {
@@ -102,8 +102,8 @@ namespace logic {
     }
     /**
      * shift right
-     * @param a number。, eg: 0x3221
-     * @param b number。, eg: 2
+     * @param a number, eg: 0x3221
+     * @param b number, eg: 2
      */
     //% blockId="shift_right" block="%a >> %b"
     export function rshift(a: number, b: number): number {
@@ -111,9 +111,9 @@ namespace logic {
     }
     /**
      * logical function
-     * @param a number。, eg: 0x3221
-     * @param f function。, eg: lFunc.xor
-     * @param b number。, eg: 0xff33
+     * @param a number, eg: 0x3221
+     * @param f logic.lFunc, eg: xor
+     * @param b number, eg: 0xff33
      */
     //% blockID="func" block="%a %f %b"
     export function func(a: number,f: lFunc, b: number): number {
