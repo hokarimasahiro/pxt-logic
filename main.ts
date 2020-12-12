@@ -46,8 +46,8 @@ namespace logic {
     }
     /**
      * 数値の指定位置のビットの01を数値で返す
-     * @param n 数値。, eg: 0x0010
-     * @param b ビット位置。, eg: 2
+     * @param n number, eg: 0x0010
+     * @param b bit position, eg: 2
      */
     //% block
     export function bittestN(n: number, b: number): number {
@@ -57,20 +57,20 @@ namespace logic {
             return 0;
     }
     /**
-     * 論理積
-     * @param a 数値。, eg: 0x3221
-     * @param b 数値。, eg: 0xff33
+     * logical and
+     * @param a number, eg: 0x3221
+     * @param b number, eg: 0xff33
      */
-    //% block
+    //% block="%a and %b"
     export function and(a: number, b: number): number {
         return a & b
     }
     /**
-     * 論理和
-     * @param a 数値。, eg: 0x3221
-     * @param b 数値。, eg: 0xff33
+     * logical or
+     * @param a number, eg: 0x3221
+     * @param b number, eg: 0xff33
      */
-    //% block
+    //% block="%a or %b"
     export function or(a: number, b: number): number {
         return a | b
     }
@@ -105,7 +105,7 @@ namespace logic {
      * @param a number。, eg: 0x3221
      * @param b number。, eg: 0xff33
      */
-    //% blockId="shift_right" block=%a >> %b"
+    //% blockId="shift_right" block="%a >> %b"
     export function rshift(a: number, b: number): number {
         return a >>> b
     }
