@@ -117,7 +117,7 @@ namespace logic {
      * @param f 演算子。, eg: func.xor
      * @param b 数値。, eg: 0xff33
      */
-    //% block
+    //% block="%a %f %b"
     export function lFunc(a: number,f: logicFunction, b: number): number {
         switch(f){
             case logicFunction.xor:return xor(a,b);break;
