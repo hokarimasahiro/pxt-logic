@@ -111,8 +111,8 @@ namespace logic {
      * @param a number, eg: 0x3221
      * @param b number, eg: 0xff33
      */
-    //% blockID="func" block="%a function %b"
-    export function func(a: number,func: lFunc, b: number): number {
+    //% blockID="logcalFunction" block="%a %func %b"
+    export function logicFunction(a: number,func: lFunc, b: number): number {
         switch(func){
             case lFunc.xor:return xor(a,b);
             case lFunc.or: return or(a, b);
