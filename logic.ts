@@ -1,5 +1,5 @@
 //% weight=100 color=#0fbc11 icon=""
-namespace logic {
+namespace logicalFunction {
     export enum lFunc{
         //% block=xor
         xor=0,
@@ -16,7 +16,7 @@ namespace logic {
      * Convert hexadecimal string to number
      * @param s hex strings, eg: 1f
      */
-    //% blockId="logic_hex2number" block="hexToNumver %s"
+    //% blockId="hex2number" block="hexToNumver %s"
     export function hex2number(s: string): number {
         let r = 0
         for (let i = 0; i < s.length; i++) {
