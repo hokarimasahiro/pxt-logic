@@ -9,8 +9,8 @@
     },
     "files": [
         "README.md",
-        "_locales/ja/logic-strings.json",
-        "logic.ts"
+        "logicalFunction.ts",
+        "_locales/ja/logicalFunction-strings.json"
     ],
     "testFiles": [
         "test.ts"
