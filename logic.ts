@@ -1,6 +1,3 @@
-/**
- * logic
- */
 //% weight=100 color=#0fbc11 icon=""
 namespace logic {
     export enum lFunc{
@@ -112,7 +109,7 @@ namespace logic {
     /**
      * logical function
      * @param a number, eg: 0x3221
-     * @param f logic.lFunc, eg: logic.lFunc.xor
+     * @param f logic.lFunc, eg: logic.lFunc
      * @param b number, eg: 0xff33
      */
     //% blockID="func" block="%a %f %b"
