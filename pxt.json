@@ -4,12 +4,13 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "RingbitCar": "github:tinkertanker/pxt-ringbitcar#v3.0.3"
     },
     "files": [
         "README.md",
         "main.ts",
-        "_locales/ja/main-strings.json"
+        "_locales/ja/logic-strings.json"
     ],
     "testFiles": [
         "test.ts"
