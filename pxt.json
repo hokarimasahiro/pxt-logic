@@ -4,8 +4,7 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "microphone": "*",
-        "RingbitCar": "github:tinkertanker/pxt-ringbitcar#v3.0.3"
+        "microphone": "*"
     },
     "files": [
         "README.md",
@@ -16,6 +15,10 @@
         "test.ts"
     ],
     "public": false,
+    "targetVersions": {
+        "target": "6.0.28",
+        "targetId": "microbit"
+    },
     "supportedTargets": [
         "microbit"
     ],
