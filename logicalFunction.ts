@@ -48,6 +48,14 @@ namespace logicalFunction {
         return s
     }
     /**
+     * Convert charactor code to number
+     * @param s charactor, eg: "a"
+     */
+    //% blockId="char2number" block="charToNumver %s"
+    export function char2number(s: string): number {
+        return s.charCodeAt(0);
+    }
+    /**
      * Logical value of the bit at the specified position
      * @param n number, eg: 0x0010
      * @param b bit position, eg: 2

@@ -4,3 +4,6 @@ logicalFunction.ShowNumber(a);
 basic.pause(3000);
 basic.clearScreen();
 basic.showString(logicalFunction.number2hex(a));
+basic.pause(3000);
+basic.clearScreen();
+basic.showNumber(logicalFunction.char2number("a"));
