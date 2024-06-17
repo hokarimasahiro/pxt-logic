@@ -30,6 +30,24 @@ namespace logicalFunction {
         return r
     }
     /**
+     * Convert number to hexadecimal string
+     * @param n number, eg: 123
+     */
+    //% blockId="number2hex" block="numberToHex %n"
+    export function number2hex(n: number): string {
+        let s = "";
+        let nList:string[]=["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"];
+        let wn = n;
+
+        if(wn == 0) return "00";
+
+        while(wn > 0){
+            s = nList[Math.trunc(wn / 16) % 16] + nList[wn % 16] + s;
+            wn = Math.trunc(wn / 256);
+        }
+        return s
+    }
+    /**
      * Logical value of the bit at the specified position
      * @param n number, eg: 0x0010
      * @param b bit position, eg: 2
